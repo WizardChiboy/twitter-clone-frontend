@@ -7,9 +7,17 @@ function App() {
   return (
     <>
       <div className="container">
-        <Sidebar />
-        <Feed />
-        <Widget />
+        <div className="sidebar">
+          <Sidebar />
+        </div>
+
+        <div className="feed">
+          <Feed />
+        </div>
+
+        <div className="widget">
+          <Widget />
+        </div>
       </div>
     </>
   );

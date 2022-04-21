@@ -1,0 +1,27 @@
+.sidebar__container {
+}
+
+.home, .explore,  .tag, .notification, .message, .bookmark, .list, .profile, .more {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    padding : 10px 0px;
+    text-transform: capitalize;
+}
+
+.sidebar__container .MuiSvgIcon-root {
+    margin-right: 15px;
+}
+
+.twitter-logo .MuiSvgIcon-root {
+    color: #1DA1F2;
+
+}
+
+/* .home__text, .home__icon {
+
+    display: inline;
+    align-items: center;
+
+
+} */

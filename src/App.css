@@ -10,3 +10,16 @@
     width: 70%;
     margin: auto;
 }
+
+.sidebar {
+    flex: 0.3;
+}
+
+.feed {
+    flex : 0.4
+}
+
+.widget {
+    flex: 0.3;
+
+}
