@@ -9,6 +9,7 @@ import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
 import PersonIcon from "@mui/icons-material/Person";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import Picture from "../Profile/Picture";
 
 function Sidebar() {
   return (
@@ -81,6 +82,25 @@ function Sidebar() {
             </div>
 
             <div className="more__text">more</div>
+          </div>
+
+          <div className="tweet__btn">
+            <button> Tweet </button>
+          </div>
+        </div>
+
+        <div className="bottom__profile">
+          <div className="profile__photo">
+            <Picture />
+          </div>
+
+          <div className="profile__info">
+            <h5>donmartins</h5>
+            <p>@Donmart25924229</p>
+          </div>
+
+          <div className="profile__readmore">
+            <MoreHorizIcon />
           </div>
         </div>
       </div>
