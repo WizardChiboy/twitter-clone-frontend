@@ -1,0 +1,38 @@
+.feed__container {
+    padding: 0px 8px;
+
+}
+
+.feed__container__header {
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.feed__container__home__text {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.feed__container__tweet__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+
+}
+
+.tweet__happenings {
+    margin-right: 70px;
+
+}
+
+.tweet__happenings textarea {
+    border: none;
+    outline : none;
+    margin-top: 20px;
+    resize: none;
+    overflow: hidden;
+}
