@@ -83,3 +83,98 @@
 .feed__container__head {
     border-bottom: 1px rgb(223, 222, 222) solid;
 }
+
+.feed__body__section__more {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+
+}
+
+.feed__body__section__more__text {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.feed__body__section__more__text .MuiSvgIcon-root {
+    font-size: 12px;
+    margin-right: 20px;
+}
+
+#see__more {
+    color: #1DA1F2;
+    font-weight: bold;
+
+}
+
+.feed__body__section__more__icon .MuiSvgIcon-root {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.feed__body__section__content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+
+}
+
+
+.feed__body__section__content__side__content {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+
+.feed__body__section__content__side__content__photo {
+    margin-right: 10px;
+    width: 40px;
+
+}
+
+.feed__body__section__content__side__content__photo img {
+    width: 100%;
+
+}
+
+.feed__body__section__content__side__content__text p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+#username {
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.feed__body__section__content__side__content__text .MuiSvgIcon-root {
+    color: #1DA1F2;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+#nick, #timestamp {
+    font-size: 12px;
+    color: rgb(106, 119, 129);
+    font-weight: bold;
+
+}
+
+.feed__body__section__content__side__content__text__img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.feed__body__section__content__side__content__text__img img {
+    width:100%;
+    border-radius: 10px;
+}

@@ -8,6 +8,13 @@ import NotesIcon from "@mui/icons-material/Notes";
 import SentimentDissatisfiedIcon from "@mui/icons-material/SentimentDissatisfied";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import LocationIcon from "@mui/icons-material/LocationOn";
+import CommentIcon from "@mui/icons-material/Comment";
+import CloseIcon from "@mui/icons-material/Close";
+import VerifiedIcon from "@mui/icons-material/Verified";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+
+import manuLogo from "../../assets/images/manu.png";
+import celebration from "../../assets/images/celebration.jpg";
 
 function Feed() {
   return (
@@ -49,6 +56,48 @@ function Feed() {
               <div className="tweet__button">
                 <button> Tweet </button>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="feed__body__section">
+          <div className="feed__body__section__more">
+            <div className="feed__body__section__more__text">
+              <CommentIcon />
+              <span>
+                You might like . <span id="see__more">See more</span>
+              </span>
+            </div>
+
+            <div className="feed__body__section__more__icon">
+              <CloseIcon />
+            </div>
+          </div>
+
+          <div className="feed__body__section__content">
+            <div className="feed__body__section__content__side__content">
+              <div className="feed__body__section__content__side__content__photo">
+                <img src={manuLogo} alt="manulogo" />
+              </div>
+
+              <div className="feed__body__section__content__side__content__text">
+                <span id="username">Manchester United</span>
+                <span id="verified">
+                  <VerifiedIcon />
+                  <span id="nick">@ManUtd</span>
+                  <span id="timestamp">. 2h</span>
+                </span>
+                <p>
+                  Christiano Ronaldo has scored 17 goals in the Premier League
+                  this season
+                </p>
+                <div className="feed__body__section__content__side__content__text__img">
+                  <img src={celebration} alt="celebration" />
+                </div>
+              </div>
+            </div>
+
+            <div className="feed__body__section__content__side__icon">
+              <MoreHorizIcon />
             </div>
           </div>
         </div>
