@@ -12,6 +12,10 @@ import CommentIcon from "@mui/icons-material/Comment";
 import CloseIcon from "@mui/icons-material/Close";
 import VerifiedIcon from "@mui/icons-material/Verified";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
+import ForumIcon from "@mui/icons-material/Forum";
+import LoopIcon from "@mui/icons-material/Loop";
+import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
+import UploadIcon from "@mui/icons-material/Upload";
 
 import manuLogo from "../../assets/images/manu.png";
 import celebration from "../../assets/images/celebration.jpg";
@@ -72,7 +76,6 @@ function Feed() {
               <CloseIcon />
             </div>
           </div>
-
           <div className="feed__body__section__content">
             <div className="feed__body__section__content__side__content">
               <div className="feed__body__section__content__side__content__photo">
@@ -92,6 +95,81 @@ function Feed() {
                 </p>
                 <div className="feed__body__section__content__side__content__text__img">
                   <img src={celebration} alt="celebration" />
+                </div>
+
+                <div className="feed__body__section__content__side__content__text__react__icons">
+                  <ForumIcon /> <span id="reactdigits">50</span>
+                  <LoopIcon /> <span id="reactdigits">100</span>
+                  <FavoriteBorderIcon /> <span id="reactdigits">750</span>
+                  <UploadIcon /> <span id="reactdigits">60</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="feed__body__section__content__side__icon">
+              <MoreHorizIcon />
+            </div>
+          </div>
+          <div className="feed__body__section__content">
+            <div className="feed__body__section__content__side__content">
+              <div className="feed__body__section__content__side__content__photo">
+                <img src={manuLogo} alt="manulogo" />
+              </div>
+
+              <div className="feed__body__section__content__side__content__text">
+                <span id="username">Manchester United</span>
+                <span id="verified">
+                  <VerifiedIcon />
+                  <span id="nick">@ManUtd</span>
+                  <span id="timestamp">. 2h</span>
+                </span>
+                <p>
+                  Christiano Ronaldo has scored 17 goals in the Premier League
+                  this season
+                </p>
+                <div className="feed__body__section__content__side__content__text__img">
+                  <img src={celebration} alt="celebration" />
+                </div>
+
+                <div className="feed__body__section__content__side__content__text__react__icons">
+                  <ForumIcon /> <span id="reactdigits">50</span>
+                  <LoopIcon /> <span id="reactdigits">100</span>
+                  <FavoriteBorderIcon /> <span id="reactdigits">750</span>
+                  <UploadIcon /> <span id="reactdigits">60</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="feed__body__section__content__side__icon">
+              <MoreHorizIcon />
+            </div>
+          </div>{" "}
+          <div className="feed__body__section__content">
+            <div className="feed__body__section__content__side__content">
+              <div className="feed__body__section__content__side__content__photo">
+                <img src={manuLogo} alt="manulogo" />
+              </div>
+
+              <div className="feed__body__section__content__side__content__text">
+                <span id="username">Manchester United</span>
+                <span id="verified">
+                  <VerifiedIcon />
+                  <span id="nick">@ManUtd</span>
+                  <span id="timestamp">. 2h</span>
+                </span>
+                <p>
+                  Christiano Ronaldo has scored 17 goals in the Premier League
+                  this season
+                </p>
+                <div className="feed__body__section__content__side__content__text__img">
+                  <img src={celebration} alt="celebration" />
+                </div>
+
+                <div className="feed__body__section__content__side__content__text__react__icons">
+                  <ForumIcon /> <span id="reactdigits">50</span>
+                  <LoopIcon /> <span id="reactdigits">100</span>
+                  <FavoriteBorderIcon /> <span id="reactdigits">750</span>
+                  <UploadIcon /> <span id="reactdigits">60</span>
                 </div>
               </div>
             </div>

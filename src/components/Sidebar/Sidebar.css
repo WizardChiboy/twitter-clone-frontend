@@ -15,6 +15,32 @@
 
 }
 
+.notification__icon  {
+    margin-right: 20px;
+    width: 18%;
+}
+
+.notification__icon .MuiSvgIcon-root {
+    position : absolute;
+    margin-right: 15px;
+
+}
+
+.notification__icon > span {
+    position : relative;
+    bottom: 5px;
+    background-color: #1DA1F2;
+    color : #fff;
+    border-radius: 50%;
+    padding: 5px;
+    align-items: center;
+    font-size: 10px;
+    left:5px;
+   
+
+
+}
+
 .tweet__btn {
 
     background-color: #1DA1F2;

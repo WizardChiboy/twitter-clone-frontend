@@ -121,6 +121,8 @@
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
+    border-bottom: 1px rgb(223, 222, 222) solid;
+    padding-bottom: 15px;
 
 }
 
@@ -160,6 +162,8 @@
     color: #1DA1F2;
     font-size: 14px;
     margin-right: 5px;
+   
+    
 }
 
 #nick, #timestamp {
@@ -177,4 +181,23 @@
 .feed__body__section__content__side__content__text__img img {
     width:100%;
     border-radius: 10px;
+}
+
+.feed__body__section__content__side__content__text__react__icons > span {
+    margin-right: 15%;
+    font-size: 12px;
+    color: rgb(79, 80, 80);
+
+}
+
+
+.feed__body__section__content__side__content__text__react__icons  {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+}
+.feed__body__section__content__side__content__text__react__icons .MuiSvgIcon-root {
+    color: rgb(79, 80, 80);
+
 }

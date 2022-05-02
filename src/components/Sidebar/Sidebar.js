@@ -3,11 +3,11 @@ import "./Sidebar.css";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import HomeIcon from "@mui/icons-material/Home";
 import TagIcon from "@mui/icons-material/Tag";
-import NotificationsIcon from "@mui/icons-material/Notifications";
+import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import ListAltIcon from "@mui/icons-material/ListAlt";
-import PersonIcon from "@mui/icons-material/Person";
+import PermIdentityIcon from "@mui/icons-material/PermIdentity";
 import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import Picture from "../Profile/Picture";
 
@@ -38,7 +38,8 @@ function Sidebar() {
 
           <div className="notification">
             <div className="notification__icon">
-              <NotificationsIcon />
+              <NotificationsNoneIcon />
+              <span id="notification__number">20</span>
             </div>
 
             <div className="notification__text">notification</div>
@@ -70,7 +71,7 @@ function Sidebar() {
 
           <div className="profile">
             <div className="profile__icon">
-              <PersonIcon />
+              <PermIdentityIcon />
             </div>
 
             <div className="profile__text">profile</div>
