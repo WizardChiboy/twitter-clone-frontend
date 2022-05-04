@@ -17,10 +17,37 @@ import LoopIcon from "@mui/icons-material/Loop";
 import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import UploadIcon from "@mui/icons-material/Upload";
 
-import manuLogo from "../../assets/images/manu.png";
-import celebration from "../../assets/images/celebration.jpg";
-
 function Feed() {
+  const feeds = [
+    {
+      displayPicture: require("../../assets/images/manu.png"),
+      username: "Manchester United",
+      isVerified: "true",
+      nick: "@ManUtd",
+      timestamp: "2h",
+      text: "Christiano Ronaldo has scored 17 goals in the Premier League this season",
+      img: require("../../assets/images/celebration.jpg"),
+      comment: "50",
+      share: "100",
+      likes: "600",
+      upload: "30",
+    },
+
+    {
+      displayPicture: require("../../assets/images/chelsea.png"),
+      username: "chelsea",
+      isVerified: "false",
+      nick: "@chelsea",
+      timestamp: "10sec",
+      text: "Kante has scored 10 goals in the UEFA this season",
+      img: require("../../assets/images/chelsea.jpg"),
+      comment: "5",
+      share: "10",
+      likes: "60",
+      upload: "300",
+    },
+  ];
+
   return (
     <>
       <div className="feed__container">
@@ -76,108 +103,47 @@ function Feed() {
               <CloseIcon />
             </div>
           </div>
-          <div className="feed__body__section__content">
-            <div className="feed__body__section__content__side__content">
-              <div className="feed__body__section__content__side__content__photo">
-                <img src={manuLogo} alt="manulogo" />
-              </div>
 
-              <div className="feed__body__section__content__side__content__text">
-                <span id="username">Manchester United</span>
-                <span id="verified">
-                  <VerifiedIcon />
-                  <span id="nick">@ManUtd</span>
-                  <span id="timestamp">. 2h</span>
-                </span>
-                <p>
-                  Christiano Ronaldo has scored 17 goals in the Premier League
-                  this season
-                </p>
-                <div className="feed__body__section__content__side__content__text__img">
-                  <img src={celebration} alt="celebration" />
+          {feeds.map((feed) => {
+            return (
+              <>
+                <div className="feed__body__section__content">
+                  <div className="feed__body__section__content__side__content">
+                    <div className="feed__body__section__content__side__content__photo">
+                      <img src={feed.displayPicture} alt="manulogo" />
+                    </div>
+
+                    <div className="feed__body__section__content__side__content__text">
+                      <span id="username">{feed.username}</span>
+                      <span id="verified">
+                        {feed.isVerified == "true" ? <VerifiedIcon /> : ""}
+                        <span id="nick">{feed.nick}</span>
+                        <span id="timestamp">. {feed.timestamp}</span>
+                      </span>
+                      <p>{feed.text}</p>
+                      <div className="feed__body__section__content__side__content__text__img">
+                        <img src={feed.img} alt="celebration" />
+                      </div>
+
+                      <div className="feed__body__section__content__side__content__text__react__icons">
+                        <ForumIcon />
+                        <span id="reactdigits">{feed.comment}</span>
+                        <LoopIcon /> <span id="reactdigits">{feed.share}</span>
+                        <FavoriteBorderIcon />
+                        <span id="reactdigits">{feed.likes}</span>
+                        <UploadIcon />
+                        <span id="reactdigits">{feed.upload}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="feed__body__section__content__side__icon">
+                    <MoreHorizIcon />
+                  </div>
                 </div>
-
-                <div className="feed__body__section__content__side__content__text__react__icons">
-                  <ForumIcon /> <span id="reactdigits">50</span>
-                  <LoopIcon /> <span id="reactdigits">100</span>
-                  <FavoriteBorderIcon /> <span id="reactdigits">750</span>
-                  <UploadIcon /> <span id="reactdigits">60</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="feed__body__section__content__side__icon">
-              <MoreHorizIcon />
-            </div>
-          </div>
-          <div className="feed__body__section__content">
-            <div className="feed__body__section__content__side__content">
-              <div className="feed__body__section__content__side__content__photo">
-                <img src={manuLogo} alt="manulogo" />
-              </div>
-
-              <div className="feed__body__section__content__side__content__text">
-                <span id="username">Manchester United</span>
-                <span id="verified">
-                  <VerifiedIcon />
-                  <span id="nick">@ManUtd</span>
-                  <span id="timestamp">. 2h</span>
-                </span>
-                <p>
-                  Christiano Ronaldo has scored 17 goals in the Premier League
-                  this season
-                </p>
-                <div className="feed__body__section__content__side__content__text__img">
-                  <img src={celebration} alt="celebration" />
-                </div>
-
-                <div className="feed__body__section__content__side__content__text__react__icons">
-                  <ForumIcon /> <span id="reactdigits">50</span>
-                  <LoopIcon /> <span id="reactdigits">100</span>
-                  <FavoriteBorderIcon /> <span id="reactdigits">750</span>
-                  <UploadIcon /> <span id="reactdigits">60</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="feed__body__section__content__side__icon">
-              <MoreHorizIcon />
-            </div>
-          </div>{" "}
-          <div className="feed__body__section__content">
-            <div className="feed__body__section__content__side__content">
-              <div className="feed__body__section__content__side__content__photo">
-                <img src={manuLogo} alt="manulogo" />
-              </div>
-
-              <div className="feed__body__section__content__side__content__text">
-                <span id="username">Manchester United</span>
-                <span id="verified">
-                  <VerifiedIcon />
-                  <span id="nick">@ManUtd</span>
-                  <span id="timestamp">. 2h</span>
-                </span>
-                <p>
-                  Christiano Ronaldo has scored 17 goals in the Premier League
-                  this season
-                </p>
-                <div className="feed__body__section__content__side__content__text__img">
-                  <img src={celebration} alt="celebration" />
-                </div>
-
-                <div className="feed__body__section__content__side__content__text__react__icons">
-                  <ForumIcon /> <span id="reactdigits">50</span>
-                  <LoopIcon /> <span id="reactdigits">100</span>
-                  <FavoriteBorderIcon /> <span id="reactdigits">750</span>
-                  <UploadIcon /> <span id="reactdigits">60</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="feed__body__section__content__side__icon">
-              <MoreHorizIcon />
-            </div>
-          </div>
+              </>
+            );
+          })}
         </div>
       </div>
     </>
